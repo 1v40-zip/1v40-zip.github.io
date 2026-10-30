@@ -66,7 +66,7 @@ class QUESTION{
   }
 }
 
-const questions = [];
+var questions = [];
 
 questions.push(new QUESTION("./question_img/1.png",["まじん","魔人"],"./question_img/ans_1.png"));
 questions.push(new QUESTION("./question_img/2.png",["にし","西"],"./question_img/ans_2.jpeg"));
