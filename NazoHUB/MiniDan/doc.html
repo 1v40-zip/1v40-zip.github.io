@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- 
+
+            曩謨　三満哆　母駄喃　阿盋囉底　賀多舎　娑曩喃　怛姪他
+            唵　佉佉　佉呬佉呬　吽吽
+            入嚩囉　入嚩囉　鉢囉入嚩囉　鉢囉入嚩囉
+            底瑟姹　底瑟姹　瑟致哩　瑟致哩
+            娑発吒　娑発吒
+            扇底迦　室哩曳　娑嚩訶
+
+        -->        
+        <title>始まりのダンジョン</title>
+    </head>
+    <body>
+        <img src="./img/cave3.png" id="background_img">
+        <div id="background_fade"></div>
+        
+        <div id="main" style="position: relative;">
+            <div id="header" style="background-color: transparent;">
+                <h1 style="color: #fff;">始まりのダンジョン</h1>
+                <hr style="width: 90%;color: #fff;">
+            </div>
+
+        <div id="notes_space">
+            <div id="notes">
+                <h5 id="title" style="margin-top: 0; text-align: center; font-size: 27px; margin-bottom: 10px; font-weight: bold;">注意事項</h5>
+                <h5 id="string" class="note_p">画像は二回タップすることで拡大できます<br>回答は表記揺れの考慮のため、ひらがなで入力することを推奨します。</h5>
+                <button id="close_button" onclick="close_note()">×</button>
+            </div>
+        </div>
+
+            
+            <div id="q_container" style="background-color: #00000050; " class="container_h">
+                <div id="img_container" class="container_v" >
+                    <div id="left_wing" class="container_h" style="width: 23%;height: 100%; gap:10%">
+                        <div class="Q_node" id="Q0">
+                            <img src="./img/ques_1.png" class="Q_img">
+                            <div class="fade container_h">
+                                <p class="answer" style="margin: 0; color: #fff;"></p>
+                            </div>
+                        </div>
+                        <div class="Q_node" id="Q2">
+                            <img src="./img/ques_3.png" class="Q_img">
+                            <div class="fade container_h">
+                                <p class="answer" style="margin: 0; color: #fff;"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="hidden_q">
+                        <div class="Q_node" id="Q4">
+                            <img src="./img/ques_5.png" class="Q_img">
+                            <div class="fade container_h">
+                                <p class="answer" style="margin: 0; color: #fff;"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="right_wing" class="container_h" style="width: 23%;height: 100%; gap:10%">
+                        <div class="Q_node" id="Q1">
+                            <img src="./img/ques_2.png" class="Q_img">
+                            <div class="fade container_h">
+                                <p class="answer" style="margin: 0; color: #fff;"></p>
+                            </div>
+                        </div>
+                        <div class="Q_node" id="Q3">
+                            <img src="./img/ques_4.png" class="Q_img">
+                            <div class="fade container_h">
+                                <p class="answer" style="margin: 0; color: #fff;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            <div id="img_zoom" class="container_h">
+                <img id="zoom_img">
+            </div>
+
+            <div id="answer_space" class="container_h">
+                <div id="input_frame">
+                    <div id="input_frame_T"></div>
+                    <div id="input_frame_L"></div>
+                    <div id="input_frame_R"></div>
+                    <div id="input_frame_B"></div>
+                </div>
+                <input id="input" type="text" name="off" placeholder=" 解答を入力">
+            </div>
+            
+
+
+        </div>
+
+        <div id="cong" class="container_h">
+            <img id="cong_img" src="./img/congratulation.png">
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

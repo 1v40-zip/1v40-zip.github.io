@@ -1,0 +1,276 @@
+body,html{
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body{
+    background-color: black;
+    /* background-image: url(./img/何見てんだよ.png); */
+    background-size: 30vw;
+    z-index: -20;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container_v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container_h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#background_img {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    z-index: -2;
+    display: block;
+    transform-origin: center center;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+#img_container {
+    flex-wrap: nowrap;
+    width: 95%;
+    height: 100%;
+    transition: all 2s;
+    gap:3%;
+}
+
+#img_container.move{
+    gap: 29% ;
+}
+
+
+#q_container {
+    position: relative;
+    margin: 80px 0;
+    margin-left: -50%;
+    aspect-ratio: 10/3.5;
+    width: 200%; 
+    transition: all 2s;
+}
+
+
+#hidden_q {
+    width: 25%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    opacity: 0;
+    transition: all 2s;
+}
+
+#hidden_q.visible {
+    opacity: 1;
+}
+
+
+.Q_node{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.8/1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fade{
+    position: absolute;
+    opacity: 0;
+    top:0;
+    width: 100%;
+    aspect-ratio: 1.8/1;
+    background-color: rgba(0, 0, 0, 0.607);
+    font-size: 40px;
+    transition: all 0.5s;
+}
+
+.fade.dis {
+    opacity: 1;
+}
+
+#cong{
+    position: absolute;
+    opacity: 0;
+    top:0vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.607);
+    transition: all 1s;
+    z-index: -1;
+    margin: 0 0;
+}
+
+#cong.dis{
+    z-index: 2000;
+    opacity: 1;
+}
+
+#cong_img {
+    width: 100%;
+}
+
+
+.Q_node.selected .fade{
+    background-color: #ffffff5f;
+    z-index: 4;
+}
+
+.Q_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#img_zoom{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(27, 25, 41, 0.413);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#img_zoom.dis{
+    opacity: 1;
+    z-index: 10;
+}
+
+#zoom_img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+#input {
+    width: 80%;
+    background-color: rgb(145, 172, 170);
+    height: 30px;
+    font-size: 18px;
+    border: none;
+}
+
+#input_frame{
+    width: 100%;
+    top:10%;
+    position: relative;
+}
+
+#input_frame_T {
+    position: absolute;
+    left: calc(7.5% - 10px);
+    top: -20px;
+    width: calc(85% + 20px);
+    height: 20px;
+    background-color: aliceblue;
+    clip-path: polygon(0 0,100% 0,calc(100% - 20px) 100%,20px 100%);
+}
+
+#input_frame_L {
+    position: absolute;
+    left: calc(7.5% - 10px);
+    top: -20px;
+    width: 20px;
+    height: 70px;
+    background-color: rgb(162, 175, 186);
+    clip-path: polygon(0 0,0 100%,100% calc(100% - 20px),100% 20px);
+}
+
+#input_frame_R {
+    position: absolute;
+    left: calc(7.5% - 10px + 85%);
+    top: -20px;
+    width: 20px;
+    height: 70px;
+    background-color: rgb(92, 99, 105);
+    clip-path: polygon(100% 0,100% 100%,0 calc(100% - 20px),0 20px);
+}
+
+
+#input_frame_B {
+    position: absolute;
+    left: calc(7.5% - 10px);
+    top: 30px;
+    width: calc(85% + 20px);
+    height: 20px;
+    background-color: rgb(63, 66, 68);
+    clip-path: polygon(0 100%,100% 100%,calc(100% - 20px) 0,20px 0);
+}
+
+
+
+
+#notes_space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+  background-color: rgb(10 10 10/ 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 21;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+#notes_space.OK {
+  opacity: 0;
+  z-index: -1;
+}
+
+#notes {
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 70%;
+  aspect-ratio: 3/4;
+}
+
+.note_p {
+  margin: 20px 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#close_button {
+  width: max(8%,30px);
+  aspect-ratio: 1/1;
+  position: absolute;
+  margin-top: 70%;
+  background-color: #aaaaaa;
+  border: none;
+  border-radius: 50%;
+}
+
+

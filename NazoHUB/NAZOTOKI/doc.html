@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>羅針盤なぞ</title>
+    </head>
+    <body id="body">
+        <header>
+            <h1>羅針盤なぞ</h1>
+            <img src="./question_img/logo.png" id="logo">
+            <hr class="header_line">
+        </header>
+        
+        <div id="notes_space">
+            <div id="notes">
+                <h5 id="title" style="margin-top: 0; text-align: center; font-size: 27px; margin-bottom: 10px; font-weight: bold;">注意事項</h5>
+                <h5 id="string" class="note_p">回答は表記揺れの考慮のため、ひらがなで入力することを推奨します。<br>メモ欄は問題ごとに保存されています。</h5>
+                <button id="close_button" onclick="close_note()">×</button>
+            </div>
+        </div>
+
+        <span id="question_node_container">
+            <template id="questions_node">
+                <a href="#" class="question">
+                    <p class="questions_node_text">問1</p>
+                    <hr class="questions_line">
+                </a>            
+            </template>
+        </span>
+        <div id="img_con">
+            <img id="question_img">
+        </div>
+        
+        <div id="answer_space">
+            <div class="answer_ui">
+                <div id="answer_inner">
+                    <input type="text" name="off" id="answer_input" placeholder=" ">
+                    <div id="answer_input_text">解答を入力</div>
+                </div>
+                <button id="answer_button" onclick="check_answer()">送信</button>
+            </div>
+            <div id="answer_underline"></div>
+            <div id="answer_img_space">
+                <img id="answer_img">
+            </div>
+        </div>
+
+        <div id="memo_space">
+            <p id="memo_label">メモ</p>
+            <textarea id="memo" rows="10"></textarea>
+        </div>
+
+        <div id="judge_space">
+            <img id="judge_img" src="./question_img/judge_true.png">
+        </div>
+
+        <div id="cong" class="container_h">
+            <img id="cong_img" src="./question_img/congratulation.png">
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
+<!-- 
+
+    曩謨　三満哆　母駄喃　阿盋囉底　賀多舎　娑曩喃　怛姪他
+    唵　佉佉　佉呬佉呬　吽吽
+    入嚩囉　入嚩囉　鉢囉入嚩囉　鉢囉入嚩囉
+    底瑟姹　底瑟姹　瑟致哩　瑟致哩
+    娑発吒　娑発吒
+    扇底迦　室哩曳　娑嚩訶
+
+-->

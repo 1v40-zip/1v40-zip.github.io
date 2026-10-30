@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "游明朝", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS P明朝", "MS 明朝", serif;  color: #172033;
+
+}
+
+body {
+  margin: 0;
+  font-family: "游明朝", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS P明朝", "MS 明朝", serif;  color: #172033;
+}
+
+h1 {
+  font-size: 32px;
+  z-index: 1;
+  margin: 30px auto;
+  text-align:center
+}
+
+header{
+  position: relative;
+}
+
+#logo{
+  position: absolute;
+  width: 190px;
+  left:50%;
+  top : 38px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+
+}
+
+.header_line {
+  width: 90%;
+}
+
+p {
+   margin: 0 auto;
+   font-size: 25px;
+   text-align:center;
+   display: block;
+}
+
+button{
+  display: block;
+}
+
+a {
+    color : #070707;
+    text-decoration: none;
+}
+
+.questions_line {
+    width: 90%;
+    padding-top: -3px;
+}
+
+.answer_line {
+  width: 90%;
+  padding-top: -10px;
+}
+
+
+#question_node_container {
+    margin: 0 auto;
+    display: flex;
+    max-width: 90%;
+    height: 60px;
+    overflow-x: auto;
+}
+
+.question {
+    display: inline-block;
+    flex-shrink: 0; 
+    height: 55px;
+    width: min(22%,142px);
+}
+
+#img_con {
+  width: 100%;
+  aspect-ratio: 4/3;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question_img {
+  display: block;
+  border: none;
+  width: 100%;
+  margin: auto;
+}
+
+
+#answer_space {
+  display: block;
+  margin: 0 auto;
+  width: max(55%,216px);
+}
+
+.answer_ui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap : 10px
+}
+
+#answer_inner {
+  width: 74%;
+  height: 26px;
+}
+
+#answer_input {
+  position: absolute;
+  font-size: 17px;
+  z-index: 1;
+  margin: 0 auto;
+  width: 90px;
+  height: 26px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#answer_input_text {
+  position: absolute;
+  color: #808080;
+  width: 90px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  font-size: 17px;
+}
+
+#answer_input:focus + #answer_input_text,
+#answer_input:not(:placeholder-shown) + #answer_input_text{
+  font-size: 12px;
+  height: 10px;
+  width: 70px;
+  transform: translate3d(0px,-14px,0);
+}
+
+#answer_button {
+  font-family: "游明朝", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS P明朝", "MS 明朝", serif;
+  font-size: 17px;
+  color: #172033;
+  background-color: none;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0px 4px 2px 0 #aaaaaa;
+  transition: all 0.2;
+  -webkit-transition: all 0.2s;
+  transform: translate(0px,-3px);
+}
+
+#answer_button:active {
+  transform: translate(0px,1px);
+  box-shadow: 0px 0px 2px 0 #aaaaaa;
+}
+
+#answer_underline {
+  position: relative;
+  border-top: 2px solid #555555;
+}
+
+#answer_img_space {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#answer_img {
+  border: none;
+  opacity: 0;
+  display: block;
+  width: 50%;
+  aspect-ratio: 1/1;
+  z-index: -1;
+  transform: translate(40%,-30%);
+  transition: all 2s;
+  -webkit-transition: all 2.0s;
+
+}
+
+#answer_img.true {
+  opacity: 0.5;
+}
+
+#judge_space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+  background-color: rgb(10 10 10/ 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#judge_img {
+  width: 90%;
+}
+
+#judge_space.display{
+  z-index: 20;
+  opacity: 1;
+}
+
+
+#memo_space {
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: min(90%,400px);
+}
+
+#memo_label {
+  text-align: left;
+}
+
+#memo {
+  resize: none;
+  width: 100%;
+}
+
+
+#notes_space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+  background-color: rgb(10 10 10/ 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 21;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+#notes_space.OK {
+  opacity: 0;
+  z-index: -1;
+}
+
+#notes {
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 70%;
+  aspect-ratio: 3/4;
+}
+
+.note_p {
+  margin: 20px 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#close_button {
+  width: max(8%,30px);
+  aspect-ratio: 1/1;
+  position: absolute;
+  margin-top: 70%;
+  background-color: #aaaaaa;
+  border: none;
+  border-radius: 50%;
+}
+
+#cong{
+    position: absolute;
+    opacity: 0;
+    top:0vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.607);
+    transition: all 1s;
+    z-index: -1;
+    margin: 0 0;
+}
+
+#cong.dis{
+    z-index: 2000;
+    opacity: 1;
+}
+
+#cong_img {
+    width: 100%;
+}
+
+.container_h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
