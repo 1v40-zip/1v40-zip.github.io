@@ -61,7 +61,7 @@ class QUESTION{
       },20)
     },20)
     if(correct_count == 9){
-      HT_all.clasList.add("bye");
+      HT_all.classList.add("bye");
       HT_back.classList.add("dis");
     }
   }
