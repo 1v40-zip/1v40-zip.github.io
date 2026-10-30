@@ -8,6 +8,13 @@
     </head>
     <body id="body">
         <img id="back" src="./question_img/clear.jpeg">
+        <div id="notes_space">
+            <div id="notes">
+                <h5 id="title" style="margin-top: 0; text-align: center; font-size: 27px; margin-bottom: 10px; font-weight: bold;">注意事項</h5>
+                <h5 id="string" class="note_p">回答は表記揺れの考慮のため、ひらがなで入力することを推奨します。<br>メモ欄は問題ごとに保存されています。</h5>
+                <button id="close_button" onclick="close_note()">×</button>
+            </div>
+        </div>
         <div id="all">
             <header>
                 <h1>羅針盤なぞ</h1>
@@ -15,13 +22,6 @@
                 <hr class="header_line">
             </header>
             
-            <div id="notes_space">
-                <div id="notes">
-                    <h5 id="title" style="margin-top: 0; text-align: center; font-size: 27px; margin-bottom: 10px; font-weight: bold;">注意事項</h5>
-                    <h5 id="string" class="note_p">回答は表記揺れの考慮のため、ひらがなで入力することを推奨します。<br>メモ欄は問題ごとに保存されています。</h5>
-                    <button id="close_button" onclick="close_note()">×</button>
-                </div>
-            </div>
     
             <span id="question_node_container">
                 <template id="questions_node">
