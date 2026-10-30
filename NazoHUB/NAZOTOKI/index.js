@@ -65,13 +65,13 @@ const questions = [];
 
 questions.push(new QUESTION("./question_img/1.png",["まじん","魔人"],"./question_img/ans_1.png"));
 questions.push(new QUESTION("./question_img/2.png",["にし","西"],"./question_img/ans_2.jpeg"));
-questions.push(new QUESTION("./question_img/3.png",["せいち","聖地"],"./question_img/ans_3.jpeg"));
+questions.push(new QUESTION("./question_img/3.png",["いたち","イタチ"],"./question_img/ans_3.jpeg"));
 questions.push(new QUESTION("./question_img/4.png",["みみ","耳"],"./question_img/ans_4.png"));
 questions.push(new QUESTION("./question_img/5.png",["ねがい","願い"],"./question_img/ans_5.png"));
 questions.push(new QUESTION("./question_img/6.png",["チャット","ちゃっと"],"./question_img/ans_6.jpeg"));
-questions.push(new QUESTION("./question_img/7.png",["こてい","固定"],"./question_img/ans_7.png"));
+questions.push(new QUESTION("./question_img/7.png",["てぬい","手縫い"],"./question_img/ans_7.png"));
 questions.push(new QUESTION("./question_img/8.png",["しょうたい","正体"],"./question_img/ans_8.png"));
-questions.push(new QUESTION("./question_img/9.png",["せんてい","先帝"],"./question_img/ans_9.jpeg"));
+questions.push(new QUESTION("./question_img/9.png",["てんたい","天体"],"./question_img/ans_9.jpeg"));
 
 
 
