@@ -47,7 +47,6 @@ class QUESTION{
       HT_answer_img.classList.remove("true");
     }
 
-    console.log(HT_answer_img.classList);
   }
   correct(){
 
@@ -74,7 +73,6 @@ questions.push(new QUESTION("./question_img/7.png",["こてい","固定"],"./que
 questions.push(new QUESTION("./question_img/8.png",["しょうたい","正体"],"./question_img/ans_8.png"));
 questions.push(new QUESTION("./question_img/9.png",["せんてい","先帝"],"./question_img/ans_9.jpeg"));
 
-console.log(questions);
 
 
 
@@ -92,7 +90,6 @@ for(var i = 0;i < Number_of_questions;i++){
   })
   
   HT_question_node_container.appendChild(questions_node);
-  console.log(questions_node)
 }
 
 change_question(current_question);
@@ -102,7 +99,6 @@ function change_question(number){
   const image_originalTransition = HT_answer_img.style.transitionProperty;
 
   
-  console.log(number);
   questions[current_question].input_value = HT_answer_input.value;
   questions[current_question].memo_value = HT_memo.value;
   HT_answer_input.value = questions[number].input_value;
@@ -134,7 +130,6 @@ function check_answer(){
       HT_judge_img.src = "./question_img/judge_true.png";
       HT_judge_space.classList.add("display");
     }
-    console.log("正解");
     questions[current_question].correct()
     text.style.color = "#f00"
     text.style.textDecorationLine = "underline"
@@ -142,8 +137,6 @@ function check_answer(){
     text.style.textDecorationThickness = "1.5px"
   }
   else{
-    console.log("不正解");
-    console.log(HT_answer_input.value);
     if(HT_answer_input.value){
       HT_judge_img.src = "./question_img/judge_false.png";
       HT_judge_space.classList.add("display");
