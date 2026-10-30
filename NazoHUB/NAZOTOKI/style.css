@@ -179,7 +179,7 @@ a {
   width: 50%;
   aspect-ratio: 1/1;
   z-index: -1;
-  transform: translate(40%,-30%);
+  transform: translate(40%,-40%);
   transition: all 2s;
   -webkit-transition: all 2.0s;
 
