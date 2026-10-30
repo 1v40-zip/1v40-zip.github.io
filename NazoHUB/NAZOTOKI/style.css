@@ -309,7 +309,7 @@ a {
 }
 
 #all.bye{
-  opacity: 100;
+  opacity: 0;
 }
 
 #back{
@@ -326,6 +326,6 @@ a {
 }
 
 #back.dis{
-  opacity:0;
+  opacity:1;
 }
 
