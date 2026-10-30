@@ -10,6 +10,8 @@ const HT_judge_img = document.getElementById("judge_img");
 const HT_memo = document.getElementById("memo");
 const HT_notes_space = document.getElementById("notes_space");
 const HT_cong = document.getElementById("cong");
+const HT_all = docment.getElementById("all");
+const HT_back = docment.getElementById("back");
 
 /*
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
@@ -58,6 +60,9 @@ class QUESTION{
         HT_answer_img.classList.add("true");
       },20)
     },20)
+    if(correct_count == 9){
+      HT_all.clasList.add("bye");
+      HT_back.classList.add("dis");
   }
 }
 
