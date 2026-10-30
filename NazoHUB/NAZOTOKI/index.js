@@ -10,8 +10,8 @@ const HT_judge_img = document.getElementById("judge_img");
 const HT_memo = document.getElementById("memo");
 const HT_notes_space = document.getElementById("notes_space");
 const HT_cong = document.getElementById("cong");
-const HT_all = docment.getElementById("all");
-const HT_back = docment.getElementById("back");
+const HT_all = document.getElementById("all");
+const HT_back = document.getElementById("back");
 
 /*
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
