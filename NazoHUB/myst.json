@@ -30,7 +30,7 @@
     {
         "img_path" : "./img/mystery_5.png",
         "difficulty" : "★☆☆",
-        "answer" : ["QR"],
+        "answer" : ["QR","きゅーあーる","キューアール"],
         "hint" : "イラストはそれぞれCDとJKだよ！",
         "explanation" : "数字はそれぞれアルファベット順に並べた時の番号に一致する。\n1→A、2→B、3→C、4→D...\n17番目はQ、18番目はRなので答えはQR。\nA.QR"
     },
@@ -58,7 +58,7 @@
     {
         "img_path" : "./img/mystery_9.png",
         "difficulty" : "★★☆",
-        "answer" : ["ブルーム","bloom","Bloom","BLOOM"],
+        "answer" : ["ブルーム","bloom","Bloom","BLOOM","ぶるーむ"],
         "hint" : "右上のイラストは、パン？ブレッド？",
         "explanation" : "赤文字で書かれた「ブ」はブレッドを表し、灰文字で書かれた「プ」はグレープを表す。書かれた色の英語＋文字という対応関係だとわかると青文字で書かれた「ム」はブルームとなる。\nA.bloom"
     },
