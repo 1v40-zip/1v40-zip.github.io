@@ -76,7 +76,7 @@ questions.push(new QUESTION("./question_img/5.png",["ねがい","願い"],"./que
 questions.push(new QUESTION("./question_img/6.png",["チャット","ちゃっと"],"./question_img/ans_6.jpeg"));
 questions.push(new QUESTION("./question_img/7.png",["てぬい","手縫い"],"./question_img/ans_7.jpeg"));
 questions.push(new QUESTION("./question_img/8.png",["しょうたい","正体"],"./question_img/ans_8.png"));
-questions.push(new QUESTION("./question_img/9.png",["てんたい","天体"],"./question_img/ans_9.jpeg"));
+questions.push(new QUESTION("./question_img/9.png",["てんたい","天体"],"./question_img/ans_9.png"));
 
 
 
