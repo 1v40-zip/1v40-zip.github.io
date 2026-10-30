@@ -63,10 +63,11 @@ class QUESTION{
     if(correct_count == 9){
       HT_all.clasList.add("bye");
       HT_back.classList.add("dis");
+    }
   }
 }
 
-var questions = [];
+const questions = [];
 
 questions.push(new QUESTION("./question_img/1.png",["まじん","魔人"],"./question_img/ans_1.png"));
 questions.push(new QUESTION("./question_img/2.png",["にし","西"],"./question_img/ans_2.jpeg"));
