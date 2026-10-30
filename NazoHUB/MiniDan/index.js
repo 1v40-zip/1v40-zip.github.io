@@ -24,7 +24,6 @@ let correct_count = 0;
 var last_tap = [0,0,0,0];
 
 HT_Q_nodes.forEach((e) => {
-    console.log(e.id[1]);
     e.addEventListener("touchend",(event)=>{
         const current_time = new Date().getTime();
         const tap_length = current_time - last_tap[e.id[1]];
@@ -77,8 +76,6 @@ HT_input.addEventListener("change",(e)=>{
                 HT_note.querySelector("#notes").querySelector("#string").textContent = "";
                 HT_note.classList.remove("OK");
 
-                console.log(correct_count);
-                console.log(correct_toggle);
                 break;
             }
         }
@@ -93,8 +90,6 @@ HT_input.addEventListener("change",(e)=>{
             HT_note.querySelector("#notes").querySelector("#string").textContent = "";
             HT_note.classList.remove("OK");
 
-            console.log(correct_count);
-            console.log(correct_toggle);
             
         }
         
