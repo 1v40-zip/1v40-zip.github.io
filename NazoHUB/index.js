@@ -40,7 +40,6 @@ class QUESTION_NODE{
             this.answer_check();
         })
         input.addEventListener("focusin",(e)=>{
-            console.log("a");
             e.stopImmediatePropagation() 	
         })
         
@@ -48,12 +47,10 @@ class QUESTION_NODE{
         this.element = document.getElementById("mystery_node_" + this.number);
     }
     answer_check(){
-        console.log(this.element);
         const input = this.element.querySelector(".answer_input");
         if(input.value == ""){
             return;
         }
-        console.log(input)
         var correct_f = false;
         for(var i = 0;i < this.answer.length;i++){
             if(input.value == this.answer[i]){
@@ -109,11 +106,9 @@ async function loadJSON() {
     var i = 0;
     question_data.forEach(ele => {
         questions.push(new QUESTION_NODE(i,ele.img_path,ele.difficulty,ele.answer,ele.hint,ele.explanation));
-        console.log(questions[i]);
         questions[i].load();
         i++;
     });
-    console.log(question_data);
 }
 
 loadJSON();
@@ -174,7 +169,6 @@ HT_parrot.addEventListener("click",(event)=>{
         parrot_state = 1;
         int_timer = 200;
         touch_count++;
-        console.log(touch_count);
         if(touch_count == 5){
             clearInterval(Interval);
             touch_count = 0;
@@ -192,7 +186,7 @@ HT_parrot.addEventListener("click",(event)=>{
             Interval = setInterval(()=>{
                 int_timer--;
                 if(int_timer < 1){
-                    console.log(touch_count);
+
                     touch_count = 0;
                     clearInterval(Interval);
                     Interval = null;
@@ -206,8 +200,7 @@ HT_parrot.addEventListener("click",(event)=>{
 
     event.preventDefault();
 
-    //console.log(min_distance);
-    //console.log(parrot_state);
+
 })
 
 HT_parrot_bubble_L.addEventListener("click",(event)=>{
