@@ -108,7 +108,7 @@ div{
 
 #gray_fade.dis {
     display: block;
-    z-index: 0;
+    z-index: 3;
 }
 
 
