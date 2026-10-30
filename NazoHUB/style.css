@@ -65,7 +65,7 @@ div{
     position: absolute;
     transform-origin: right bottom;
     right: 2%;
-    bottom: 25%;
+    bottom: 27%;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -130,7 +130,7 @@ div{
     bottom: 32%;
     border-radius: 30px;
     width: 80%;
-    height: 50%;
+    height: 60%;
     background-color: #fff;
 
 }
@@ -231,7 +231,7 @@ div{
 
 #home_about {
     width: 100%;
-    height: max(50px,45vh);
+    height: max(50px,120vw);
     background-color: #1f8a70;
 }
 
