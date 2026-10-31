@@ -63,9 +63,9 @@ div{
 
 #ad{
     position: absolute;
-    transform-origin: center bottom;
     right: 50%;
-    bottom: 27%;
+    bottom: 30%;
+    transform: translate(50%, 0);
     font-family: sans-serif;
     font-weight: bold;
     font-size: 15px;
