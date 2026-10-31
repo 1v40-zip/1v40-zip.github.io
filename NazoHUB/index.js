@@ -96,6 +96,7 @@ HT_judge.addEventListener("click",()=>{
     if(correct_counter == 20){
         HT_parrot_bubble_L.classList.add("dis");
         HT_parrot_bubble_L.querySelector("#img").src = "./img/Mr.Parrot_win.png";
+         HT_parrot_bubble_L.querySelector("#h").innerHTML = '全問正解！';       
         HT_parrot_bubble_L.querySelector("#exa").innerHTML = '全問正解おめでとうございます！<br>もしよければアンケートにご協力いただけると幸いです。<a href="https://docs.google.com/forms/d/e/1FAIpQLSeG1JIPUhUZcvCnZ2ePFrePjofC8xCWs0rGiqOWs6DuwjpmWQ/viewform?usp=publish-editor">アンケート</a>';
         HT_parrot.src = "./img/Mr.Parrot_happy.png"
         HT_parrot.style.width = "33%"
